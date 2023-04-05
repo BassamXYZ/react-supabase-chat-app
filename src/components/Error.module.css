@@ -1,0 +1,10 @@
+.container {
+  color: var(--text);
+  grid-column: 3/7;
+  grid-row: 3/7;
+  margin: auto;
+}
+
+.container h1 {
+  margin: 20px 0;
+}
