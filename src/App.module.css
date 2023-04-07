@@ -1,12 +1,24 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .container {
+  width: 100%;
   text-align: center;
   max-width: 728px;
   position: fixed;
   top: 0;
   left: 50%;
   bottom: 0;
+  -webkit-transform: translatex(-50%);
+  -ms-transform: translatex(-50%);
   transform: translatex(-50%);
+  -webkit-box-shadow: 0 0 10px var(--divider);
   box-shadow: 0 0 10px var(--divider);
+  display: -ms-grid;
   display: grid;
 }
 
@@ -16,10 +28,17 @@
   color: var(--text);
   width: 100%;
   max-width: 728px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 10px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-bottom: 1px solid var(--divider);
 }
@@ -39,8 +58,14 @@
 main {
   padding: 10px;
   overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -67,11 +92,13 @@ main div {
 
 .sent {
   background-color: var(--divider);
+  -ms-flex-item-align: end;
   align-self: flex-end;
 }
 
 .received {
   background-color: var(--light-primary);
+  -ms-flex-item-align: start;
   align-self: flex-start;
 }
 
@@ -99,6 +126,8 @@ main a:hover {
   background-color: var(--primary);
   width: 100%;
   max-width: 728px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 1.25rem;
   border-top: 1px solid var(--divider);
