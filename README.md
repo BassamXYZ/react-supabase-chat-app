@@ -4,7 +4,7 @@ This is a chat app built with react and supabase.
 
 ## Screenshots
 
-![App Screenshot](https://i.postimg.cc/dQbYfxk9/2023-09-12-143605.png)
+![App Screenshot](https://i.postimg.cc/wvbVXyYh/chat-app.png)
 
 ## Feedback
 
@@ -41,9 +41,24 @@ Start the server
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`SUPABASE_URL`
+`VITE_SUPABASE_URL`
+`VITE_SUPABASE_URL`
 
-`SUPABASE_URL`
+## Setup your Supabase project
+
+The following database table messages is required:
+
+| Field | Type |
+| ----- | ---- |
+| id | int8 |
+| text | text |
+| username | text |
+
+Note: Don't forget to tick `Enable Realtime` setting after you created the table.
+
+## Demo
+
+[https://bassamchatapp.netlify.app](https://bassamchatapp.netlify.app)
 
 ## 🚀 About Me
 
