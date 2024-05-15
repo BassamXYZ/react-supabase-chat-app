@@ -2,10 +2,6 @@
 
 This is a chat app built with react and supabase.
 
-## Screenshots
-
-![App Screenshot](https://i.postimg.cc/wvbVXyYh/chat-app.png)
-
 ## Feedback
 
 If you have any feedback, please reach out to us at <bassam.essam.ahmad@gmail.com>
