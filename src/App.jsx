@@ -1,20 +1,19 @@
 import { useEffect, useRef } from 'react'
 import { useNavigate } from "react-router-dom"
 import { useAppContext } from './context/appContext'
-import styles from './App.module.css'
 
 function App() {
   const { username, isAuth, error, messages, supabase, auth } = useAppContext();
-  const navigate = useNavigate()
-  const reversed = [...messages].reverse()
+  //const navigate = useNavigate()
+  const reversed = [/*...*/messages].reverse()
   const messageRef = useRef()
   const dummy = useRef()
 
-  useEffect(() => {
+  /*useEffect(() => {
     if (!isAuth) {
       return navigate("/signin");
     };
-  }, [isAuth])
+  }, [isAuth])*/
 
   useEffect(() => {
     dummy.current && dummy.current.scrollIntoView({ behavior: 'smooth' });
@@ -79,12 +78,12 @@ function App() {
       </header>
       <main>
         {
-          messages.length
+          reversed.length
             ?
             reversed.map((message) =>
-              <div className={message.username === username ? styles.sent : styles.received} key={message.id}>
-                <p>{isValidUrl(message.text) ? <a href={message.text} target="_blank">{message.text}</a> : message.text}</p>
-                <p>@{message.username}</p>
+              <div /*className={message.username === username ? styles.sent : styles.received}*/ key={message/*.id*/}>
+                <p>{/*isValidUrl(message.text) ? <a href={message.text} target="_blank">{message.text}</a> : message.text*/} Text</p>
+                <p>@{/*message.username*/}</p>
               </div>
             )
             :

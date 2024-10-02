@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
 import { useAppContext } from '../context/appContext'
 import styles from './Sign.module.css'
 
