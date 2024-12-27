@@ -6,4 +6,4 @@
 * [ ] Private Chats Instead of General Chat
 * [ ] P2P Voice Call
 * [ ] P2P Video Call
-* [ ] Deploy It
+* [ ] Add 24H Stories Feature
