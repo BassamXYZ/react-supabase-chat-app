@@ -1,4 +1,3 @@
-* [ ] rebuild it with Nextjs
 * [ ] Rebuild Sign-up
 * [ ] Rebuild Sign-in
 * [ ] Profile Page
